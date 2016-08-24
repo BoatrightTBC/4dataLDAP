@@ -1,0 +1,13 @@
+# ignore framework files
+jquery.*
+grid.*
+uploadifive.*
+jqModal.*
+jqDnR.*
+js/minified/
+js/images/
+js/i18n/
+font/
+people/
+themes/
+*.bak

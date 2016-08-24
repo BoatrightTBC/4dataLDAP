@@ -1,0 +1,840 @@
+/* Grid.css */
+body {
+    font - family: 'Helvetica Neue', Helvetica, Arial, sans - serif;
+}
+.GridHeader {
+    display: none;
+}
+.Header {
+    width: 100 % ;
+}
+.Header th {
+    font - size: 130 % ;
+    font - family: 'Helvetica Neue', Helvetica, Arial, sans - serif;
+    text - align: left;
+    text - transform: uppercase;
+    padding: 2 px;
+    height: 40 px;
+    padding - left: 25 px;
+    background - color: #028bcf;
+/* background-image: url(images/headerbg.gif); */
+color: # FFFFFF;
+    text - shadow: 1 px 1 px 0 px #01567f;
+width: 100%;
+	}
+
+.HeaderLeft { 
+	background-color: # 028 bcf;
+    /* background-image: url(images/headerleft.gif); */
+}
+.HeaderRight {
+    background - color: #028bcf;
+	/* background-image: url(images/headerright.gif); */
+	}
+.HeaderButton {
+	background-color: # 028 bcf;
+    /* background-image: url(images/headerbg.gif); */
+}
+.HeaderButton img {
+    width: 17 px;
+}
+.HeaderLeft img {
+    width: 14 px;
+}
+.HeaderRight img {
+    width: 10 px;
+}
+/* Grid */
+table.scroll {
+    table - layout: fixed;
+    border - right: 1 px solid# D4D0C8;
+    font - size: 12 px;
+    border - left: 1 px solid# D4D0C8;
+}
+table.scroll tbody tr {
+    background - color: #ffffff;
+}
+table.scroll tbody tr.alt {
+    background - color: #ffffff;
+}
+table.scroll tr.over td {
+    background - color: #86C2FF;
+}
+	
+	table.scroll tr.selected td {
+	background: # 028 bcf;
+    color: White;
+}
+table.scroll tbody td {
+    padding: 2 px;
+    text - align: left;
+    border - bottom: 1 px solid# D4D0C8;
+    text - overflow: ellipsis;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    height: auto;
+}
+table.scroll thead th {
+    padding: 2 px;
+    border - bottom: 1 px solid# CBC7B8;
+    border - left: 1 px solid# D4D0C8;
+    text - align: left;
+    vertical - align: middle;
+    text - transform: uppercase;
+    font - size: 10 px;
+    font - weight: bold;
+    overflow: hidden;
+    white - space: nowrap;
+    background - color: #E5E5E5;
+    border - radius: 0; - webkit - border - radius: 0; - moz - border - radius: 0; - moz - box - shadow: inset 0 1 px 0 rgba(255, 255, 255, .14); - webkit - box - shadow: inset 0 1 px 0 rgba(255, 255, 255, .14);
+    box - shadow: inset 0 1 px 0 rgba(255, 255, 255, .14);
+    background - image: url(data: image / svg + xml; base64, PD94bWwgdmVyc2lvbj0iMS4wIiA / Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIwLjI3Ii8 + CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwLjI3Ii8 + CiAgIDwvbGluZWFyR3JhZGllbnQ + Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc + );
+    background - image: -moz - linear - gradient(bottom, rgba(0, 0, 0, .27) 0 % , rgba(255, 255, 255, .27) 100 % );
+    background - image: -o - linear - gradient(bottom, rgba(0, 0, 0, .27) 0 % , rgba(255, 255, 255, .27) 100 % );
+    background - image: -webkit - linear - gradient(bottom, rgba(0, 0, 0, .27) 0 % , rgba(255, 255, 255, .27) 100 % );
+    background - image: linear - gradient(bottom, rgba(0, 0, 0, .27) 0 % , rgba(255, 255, 255, .27) 100 % );
+}
+table.scroll th div {
+    white - space: nowrap;
+}
+table.scroll th span {
+        cursor: e - resize;
+        /*	border-right: 1px solid #D6D2C2;  */
+        width: 10 px;
+        float: right;
+        display: block;
+        margin: -2 px - 1 px - 2 px 0 px;
+        height: 17 px;
+        overflow: hidden;
+        white - space: nowrap;
+    }
+    /* End Grid */
+    /* Pager */
+div.scroll {
+    vertical - align: top;
+    height: 23 px;
+    white - space: nowrap;
+    text - align: center;
+    background - image: url(images / grid - blue - ft.gif);
+    display: none;
+}
+div.scroll span {
+        vertical - align: top;
+    }
+    .selbox {
+        font - size: 12 px;
+        vertical - align: top;
+    }
+input.selbox {
+        font - size: 12 px;
+        vertical - align: top;
+    }
+    .pgbuttons {
+        margin - top: 2 px;
+    }
+    .nav - table - left {
+        padding: 1 px;
+        float: left;
+        /*	position:absolute;*/
+    }
+    .nav - table - right {
+        padding: 1 px;
+        float: right;
+    }
+    .nav - button {
+        /*	margin-top:2px;*/
+        border: 1 px solid# E2ECF8;
+        white - space: nowrap;
+    }
+    .nav - hover {
+        border: 1 px solid #83B4D8;
+}
+
+img.jsHover { /*not used */
+	border: 1px solid # 99 CCFF;
+    }
+    /* End Pager */
+    /*multiselect checkbox */
+    .cbox {
+        height: 10 px;
+        width: 10 px;
+        /*border:1px solid #999;*/
+    }
+    /* end multiselect */
+    /* loading div */
+div.loading {
+        position: absolute;
+        padding: 3 px;
+        text - align: center;
+        font - weight: bold;
+        font - size: 1.2e m;
+        background: #b73d37;
+        color: white;
+        display: none;
+    }
+    /* end loading div */
+    /* toolbar */
+div.userdata {
+        margin - top: 0 px;
+        background - color: #EAF9F9;
+        height: 20 px;
+    }
+    /* end toolbar */
+    /*Subgrid  text mode*/
+    .subgrid {
+        overflow: auto;
+    }
+    .tablediv {
+        display: table;
+        background - color: White;
+        border - spacing: 1 px; /*cellspacing:poor IE support for  this*/
+        border - collapse: separate;
+        width: 100 % ; /* FF hack poor when scroling subgrid */
+    }
+    .celldiv {
+        float: left;
+        display: table - cell;
+        border: 1 px dotted# CCCCCC;
+        overflow: auto;
+    }
+    .celldivth {
+        float: left; /*fix for  buggy browsers*/
+        border: 1 px solid# CCCCCC;
+        background - color: #99CCFF;
+	border-bottom: 1px solid # CBC7B8;
+        text - align: left;
+        overflow: auto;
+    }
+    .rowdiv {
+        display: table - row;
+        background: #F9F9F9 none;
+        color: #000000;
+	width: 100%;
+	overflow:auto;
+}
+
+/* End Subgrid */
+
+/* InLine editing */
+input.editable[type= "text"] {
+        font - size: 12 px;
+        overflow: hidden;
+        border - radius: 2 px;
+        border: 0;
+        /*height : 15px;*/
+    }
+input# time_in,
+input# time_out,
+input# jobcode,
+input# units,
+input# workorder,
+input# emplno,
+input# empname,
+input# uid,
+input# password,
+input# trainer {
+    overflow: hidden;
+    height: 20 px;
+    padding - left: 10 px;
+}
+input.editable[type = "checkbox"] {}
+textarea.editable {
+    overflow: hidden;
+}
+input# time_in: focus,
+    input# time_out: focus,
+    input# jobcode: focus,
+    input# units: focus,
+    input# workorder: focus {
+        overflow: hidden;
+        outline - color: #ffffff;
+    }
+input.editable: focus {
+    overflow: hidden;
+    outline - color: #ffffff;
+}
+select.editable {
+        font - size: 12 px;
+    }
+    /* End Inline Editing */
+    /*Modal Window */
+    .modaltext {
+        text - align: left;
+    }
+    .modalwin {
+        display: block;
+        opacity: 1;
+        width: 600 px;
+        height: auto;
+        position: relative;
+        left: 50 % ;
+        top: 50 px;
+        z - index: 999999;
+    }
+    .modalhead {
+        font - size: 16 px;
+        padding: 15 px 30 px;
+        display: block;
+        border - bottom: solid 1 px# e1e1e1;
+        background - color: #f9f9f9;
+        color: #323436;
+	padding: 10px 20px 7px 20px;
+	font-family: 'source_sans_prosemibold', sans-serif;
+}
+
+.modalcontent {
+	padding: 20px 30px;	
+	font-family: 'source_sans_proregular','Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+	font-size: 12px;
+	color: # 343434;
+        font - weight: 400;
+        line - height: 23 px;
+        letter - spacing: normal;
+        outline: 0;
+        vertical - align: baseline;
+        background: #f2f2f2;
+        margin: 0;
+    }
+    /* end Modal window*/
+    /* Search window */
+input.search {
+        margin: 2 px;
+        width: 70 px;
+        font - size: 12 px;
+        color: #15428B;	
+}
+
+select.search {
+	margin: 2px;
+	width: 70px;
+	font-size: 12px;
+	color: # 15428 B;
+    }
+    .buttonsearch {
+        width: 50 px;
+        font - size: 12 px;
+        color: #15428B;		
+}
+/*End search */
+
+/* Form edit */
+
+.FormGrid {
+	margin: 0px;
+}
+.EditTable {
+	width: 100%;
+}
+
+.FormData { /* tr */
+	font-size: 0.85em;
+}
+
+# FormError td {
+                font - size: 90 % ;
+                color: #FF0000;
+                vertical - align: top;
+                background - color: #f7f7f7;
+            }
+            .CaptionTD { /* td */
+                font - weight: normal;
+                text - align: left;
+                vertical - align: top;
+                padding: 1 px;
+                border - top: 1 px solid# D4D0C8;
+                white - space: nowrap;
+                color: #000000;
+}
+.DataTD { /* td */
+	padding: 1px;
+	border-top: 1px solid # D4D0C8;
+                vertical - align: top;
+            }
+            .navButton {
+                border - top: 1 px solid# D4D0C8;
+                border - bottom: 1 px solid# D4D0C8;
+                text - align: center;
+                zoom: 1.6;
+            }
+            .navButton input {
+                width: 17 px;
+            }
+        input.EditButton { /* buttons are at footer tr */
+            font - size: 12 px;
+            color: #15428B;
+}
+td.EditButton {
+	text-align: right;
+	border-top: 1px solid # D4D0C8;
+            border - bottom: 1 px solid# D4D0C8;
+            zoom: 0.9;
+        }
+        .FormElement { /* form element  - input -text,textarea,checkbox - select  */ }
+        .FormElement {
+            font - size: 10 px;
+        }
+        input[type = "text"].FormElement {
+            color: #15428B;		
+}
+input[type= "checkbox"].FormElement {
+            width: 15 px;
+            color: #15428B;		
+}
+input[type= "textarea"].FormElement {
+            color: #15428B;		
+}
+/* shrink edit form fonts */
+TD.DataTD select.FormElement {
+	font-size: 0.95em;
+	color: # 15428 B;
+        }
+        /* move buttons left */
+        .fm - button {
+            margin: 0 8 px 0 0;
+        }
+        /* zoom datepicker navigate buttons */
+        a.ui - datepicker - prev span {
+            zoom: 2;
+        }
+        a.ui - datepicker - next span {
+            zoom: 2;
+        }
+        img.ui - datepicker - trigger {
+            zoom: 1.4;
+            margin - left: 8 px;
+        }
+        /* End Eorm edit */
+        /* Delete Dialog */
+        .DelButton > input { /* buttons are at footer tr */
+            font - size: 10 px;
+            color: #15428B;
+}
+.DelButton {
+	text-align: right;
+}
+/* End Delete Dialog */
+
+img.jqResize {
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+	cursor :se-resize;
+}
+.dirty-cell {
+	background: transparent url(images/dirty.gif) no-repeat 0 0;	
+}
+# DelError td {
+                    font - size: 90 % ;
+                    color: #FF0000;
+                    vertical - align: top;
+                    background - color: #f7f7f7;
+                }
+                /* -- end of grid.css */
+                /* Common.css */
+            body {
+                width: 100 % ;
+                background - color: #343434;
+}
+
+# topbar {
+                    float: right;
+                    clear: both;
+                }
+                button {
+                    -webkit - appearance: none; - webkit - user - select: none; - webkit - writing - mode: horizontal - tb;
+                    align - items: flex - start;
+                    background - color: rgb(255, 255, 255);
+                    background - image: none;
+                    border - bottom - color: rgb(204, 204, 204);
+                    border - bottom - left - radius: 4 px;
+                    border - bottom - right - radius: 4 px;
+                    border - bottom - style: solid;
+                    border - bottom - width: 1 px;
+                    border - image - outset: 0 px;
+                    border - image - repeat: stretch;
+                    border - image - slice: 100 % ;
+                    border - image - source: none;
+                    border - image - width: 1;
+                    border - left - color: rgb(204, 204, 204);
+                    border - left - style: solid;
+                    border - left - width: 1 px;
+                    border - right - color: rgb(204, 204, 204);
+                    border - right - style: solid;
+                    border - right - width: 1 px;
+                    border - top - color: rgb(204, 204, 204);
+                    border - top - left - radius: 4 px;
+                    border - top - right - radius: 4 px;
+                    border - top - style: solid;
+                    border - top - width: 1 px;
+                    box - sizing: border - box;
+                    color: rgb(51, 51, 51);
+                    cursor: pointer;
+                    display: inline - block;
+                    font - family: 'Helvetica Neue', Helvetica, Arial, sans - serif;
+                    font - size: 14 px;
+                    font - style: normal;
+                    font - variant: normal;
+                    font - weight: normal;
+                    height: 34 px;
+                    letter - spacing: normal;
+                    margin - bottom: 5 px;
+                    margin - left: 0 px;
+                    margin - right: 0 px;
+                    margin - top: 5 px;
+                    padding - bottom: 6 px;
+                    padding - left: 12 px;
+                    padding - right: 12 px;
+                    padding - top: 6 px; - webkit - border - radius: 3 px;
+                    background - color: #343434;
+	border-radius: 3px;
+	border: 0px;
+	color: # ffffff;
+                    display: inline - block;
+                    margin: auto;
+                    margin - bottom: 5 px;
+                    padding: 8 px;
+                    text - decoration: none;
+                }
+                button: hover {
+                    background: #028bcf;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+button.depressed {
+	background-color: # 028 bcf;
+                }#
+                sendButton {
+                    -webkit - appearance: none; - webkit - user - select: none; - webkit - writing - mode: horizontal - tb;
+                    align - items: flex - start;
+                    background - color: rgb(255, 255, 255);
+                    background - image: none;
+                    border - bottom - color: rgb(204, 204, 204);
+                    border - bottom - left - radius: 4 px;
+                    border - bottom - right - radius: 4 px;
+                    border - bottom - style: solid;
+                    border - bottom - width: 1 px;
+                    border - image - outset: 0 px;
+                    border - image - repeat: stretch;
+                    border - image - slice: 100 % ;
+                    border - image - source: none;
+                    border - image - width: 1;
+                    border - left - color: rgb(204, 204, 204);
+                    border - left - style: solid;
+                    border - left - width: 1 px;
+                    border - right - color: rgb(204, 204, 204);
+                    border - right - style: solid;
+                    border - right - width: 1 px;
+                    border - top - color: rgb(204, 204, 204);
+                    border - top - left - radius: 4 px;
+                    border - top - right - radius: 4 px;
+                    border - top - style: solid;
+                    border - top - width: 1 px;
+                    box - sizing: border - box;
+                    color: rgb(51, 51, 51);
+                    cursor: pointer;
+                    display: inline - block;
+                    font - family: 'Helvetica Neue', Helvetica, Arial, sans - serif;
+                    font - size: 14 px;
+                    font - style: normal;
+                    font - variant: normal;
+                    font - weight: normal;
+                    height: 34 px;
+                    letter - spacing: normal;
+                    margin - bottom: 5 px;
+                    margin - left: 0 px;
+                    margin - right: 0 px;
+                    margin - top: 5 px;
+                    overflow - x: visible;
+                    overflow - y: visible;
+                    padding - bottom: 6 px;
+                    padding - left: 12 px;
+                    padding - right: 12 px;
+                    padding - top: 6 px; - webkit - border - radius: 3 px;
+                    background - color: #b73d37;
+                    border - radius: 3 px;
+                    color: #ffffff;
+                    display: inline - block;
+                    margin: auto;
+                    margin - bottom: 5 px;
+                    padding: 8 px;
+                    text - decoration: none;
+                    margin - right: 25 px;
+                }#
+                sendButton: hover {
+                        background: #7F2A26;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.button-link,
+input.EditButton,
+input# dData,
+                        input# eData {
+                            -webkit - appearance: none; - webkit - user - select: none; - webkit - writing - mode: horizontal - tb;
+                            align - items: flex - start;
+                            background - color: rgb(255, 255, 255);
+                            background - image: none;
+                            border - bottom - color: rgb(204, 204, 204);
+                            border - bottom - left - radius: 4 px;
+                            border - bottom - right - radius: 4 px;
+                            border - bottom - style: solid;
+                            border - bottom - width: 1 px;
+                            border - image - outset: 0 px;
+                            border - image - repeat: stretch;
+                            border - image - slice: 100 % ;
+                            border - image - source: none;
+                            border - image - width: 1;
+                            border - left - color: rgb(204, 204, 204);
+                            border - left - style: solid;
+                            border - left - width: 1 px;
+                            border - right - color: rgb(204, 204, 204);
+                            border - right - style: solid;
+                            border - right - width: 1 px;
+                            border - top - color: rgb(204, 204, 204);
+                            border - top - left - radius: 4 px;
+                            border - top - right - radius: 4 px;
+                            border - top - style: solid;
+                            border - top - width: 1 px;
+                            box - sizing: border - box;
+                            color: rgb(51, 51, 51);
+                            cursor: pointer;
+                            display: inline - block;
+                            font - family: 'Helvetica Neue', Helvetica, Arial, sans - serif;
+                            font - size: 14 px;
+                            font - style: normal;
+                            font - variant: normal;
+                            font - weight: normal;
+                            height: 34 px;
+                            letter - spacing: normal;
+                            margin - bottom: 5 px;
+                            margin - left: 0 px;
+                            margin - right: 0 px;
+                            margin - top: 5 px;
+                            overflow - x: visible;
+                            overflow - y: visible;
+                            padding - bottom: 6 px;
+                            padding - left: 12 px;
+                            padding - right: 12 px;
+                            padding - top: 6 px; - webkit - border - radius: 3 px;
+                            background - color: #343434;
+	border-radius: 3px;
+	color: # ffffff;
+                            display: inline - block;
+                            margin: auto;
+                            margin - bottom: 5 px;
+                            padding: 8 px;
+                            text - decoration: none;
+                            margin - right: 5 px;
+                        }
+                        .button - link: hover,
+                        input.EditButton: hover,
+                        input# dData: hover,
+                        input# eData: hover {
+                                background: #028bcf;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.jqmClose,
+# newTemplate,
+                                #deleteTemplateButton,
+                                #editTemplate,
+                                #employeesTemplate,
+                                #open_report_button {
+                                    float: right;
+                                    margin - top: 15 px;
+                                    margin - right: 5 px;
+                                }
+                                input[type = radio].css - checkbox {
+                                    position: absolute;
+                                    z - index: -1000;
+                                    top: -1000 px;
+                                    overflow: hidden;
+                                    clip: rect(0 0 0 0);
+                                    height: 1 px;
+                                    width: 1 px;
+                                    margin: -1 px;
+                                    padding: 0;
+                                    border: 0;
+                                }
+                                input[type = radio].css - checkbox + label.css - label {
+                                    padding - left: 25 px;
+                                    height: 20 px;
+                                    display: inline - block;
+                                    line - height: 20 px;
+                                    background - repeat: no - repeat;
+                                    background - position: 0 0;
+                                    /* font-size:20px; */
+                                    vertical - align: middle;
+                                    cursor: pointer;
+                                }
+                                input[type = radio].css - checkbox: checked + label.css - label {
+                                    background - position: 0 - 20 px;
+                                }
+                                label.css - label {
+                                    background - image: url(http: //www.vocshop.com/4data/images/csscheckbox.png);
+                                        -webkit - touch - callout: none; - webkit - user - select: none; - khtml - user - select: none; - moz - user - select: none; - ms - user - select: none; user - select: none;
+                                    }#
+                                    employeeSelect {
+                                        -webkit - background - clip: border - box; - webkit - background - origin: padding - box; - webkit - background - size: auto; - webkit - box - shadow: none; - webkit - font - smoothing: auto; - webkit - rtl - ordering: logical;
+                                        border: 1 px solid# ccc;
+                                        border - bottom - left - radius: 3 px;
+                                        border - bottom - right - radius: 3 px;
+                                        border - top - left - radius: 3 px;
+                                        border - top - right - radius: 3 px;
+                                        box - shadow: none;
+                                        box - sizing: border - box;
+                                        color: rgb(34, 34, 34);
+                                        height: 34 px;
+                                        letter - spacing: normal;
+                                        margin - bottom: 0 px;
+                                        margin - left: 0 px;
+                                        margin - right: 0 px;
+                                        margin - top: 0 px;
+                                        outline - color: rgb(34, 34, 34);
+                                        outline - style: none;
+                                        outline - width: 0 px;
+                                        padding - left: 20 px;
+                                        text - align: start;
+                                        text - shadow: none;
+                                        text - transform: none;
+                                        vertical - align: baseline;
+                                        word - spacing: 0 px;
+                                    }#
+                                    maindate {
+                                        -webkit - background - clip: border - box; - webkit - background - origin: padding - box; - webkit - background - size: auto; - webkit - box - shadow: none; - webkit - font - smoothing: auto; - webkit - rtl - ordering: logical;
+                                        border: 1 px solid# ccc;
+                                        border - bottom - left - radius: 3 px;
+                                        border - bottom - right - radius: 3 px;
+                                        border - top - left - radius: 3 px;
+                                        border - top - right - radius: 3 px;
+                                        box - shadow: none;
+                                        box - sizing: border - box;
+                                        color: rgb(34, 34, 34);
+                                        font - weight: bold;
+                                        height: 34 px;
+                                        letter - spacing: normal;
+                                        margin - bottom: 0 px;
+                                        margin - left: 0 px;
+                                        margin - right: 0 px;
+                                        margin - top: 0 px;
+                                        outline - color: rgb(34, 34, 34);
+                                        outline - style: none;
+                                        outline - width: 0 px;
+                                        text - align: center;
+                                        text - shadow: none;
+                                        text - transform: none;
+                                        vertical - align: baseline;
+                                        word - spacing: 0 px;
+                                        width: 100 px;
+                                    }#
+                                    wrapper {
+                                        background - color: #fff;
+                                        margin: 0 px auto;
+                                        width: 900 px;
+                                        min - width: 470 px;
+                                        border: 1 px solid# ccc;
+                                        min - height: 350 px;
+                                        padding - left: 5 px;
+                                        padding - top: 5 px;
+                                        padding - right: 5 px;
+                                    }
+                                    div# hourJobs {
+                                        float: left;
+                                        font - family: 'Helvetica Neue',
+                                        Helvetica,
+                                        Arial,
+                                        sans - serif;
+                                        font - size: 15 px;
+                                        font - style: normal;
+                                        font - variant: normal;
+                                        font - weight: bold;
+                                        letter - spacing: -1 px;
+                                    }
+                                    div# hourJobs span {
+                                        font - weight: normal;
+                                        letter - spacing: normal;
+                                    }
+                                    div# editmodtemplateList.modalwin.jqmWindow.jqmID5 {
+                                            z - index: 100;
+                                        }
+                                        /* -- end of common.css */
+                                        /* 4data.css */
+                                    body {
+                                        width: 98 % ;
+                                        font - size: 1e m;
+                                        margin: 2 px;
+                                    }#
+                                    employeeselect_div {
+                                        left: 0 px;
+                                        top: 0 px;
+                                        width: 98 % ;
+                                    }#
+                                    reports_div {
+                                        left: 0 px;
+                                        width: 98 % ;
+                                    }#
+                                    jobList {
+                                        z - index: 9999;
+                                    }#
+                                    job_desc_list, #hours_list, #pay_meth_list {
+                                        font - size: 0.9e m;
+                                        background - color: #DDD;
+                                    }#
+                                    timecard_div {
+                                        left: 0 px;
+                                        width: 98 % ;
+                                        top: 0 px;
+                                        min - height: 300 px;
+                                    }
+                                    .selection tr.hover {
+                                            background - color: #EAF2FB;
+                                            white - space: nowrap;
+                                        }
+                                        .selection td {
+                                            padding: 5 px;
+                                            white - space: nowrap;
+                                        }
+                                        .leftborder {
+                                            border - left: 1 px solid# ccc;
+                                        }
+                                        .selection tr {
+                                            /*margin: -3px;*/
+                                        }
+                                        .selection {
+                                            position: relative;
+                                            background - color: white;
+                                            border: 2 px solid# ccc;
+                                            margin: 0 px;
+                                            margin - top: 10 px;
+                                            padding: 0 px;
+                                            font - size: 0.8e m;
+                                            text - align: left;
+                                            max - height: 200 px;
+                                            overflow: auto;
+                                            white - space: nowrap;
+                                        }#
+                                    timecard_body {
+                                        border: 1 px solid;
+                                        margin: 10 px;
+                                        height: 80 % ;
+                                    }
+                                    .ui - widget - content {
+                                            font - size: 1.1e m;
+                                        }
+                                        .ui - jqgrid tr.jqgrow td {
+                                            height: 25 px;
+                                            padding: 2 px 2 px 2 px 2 px;
+                                        }#
+                                    timecard_body p {
+                                        margin: 0 px 0 px 5 px;
+                                    }#
+                                    employeeMultiSelect {
+                                        width: 85 % ;
+                                        margin: 10 px;
+                                        height: 300 px;
+                                    }
+                                    tr.ui - state - highlight td {
+                                            background - color: yellow;
+                                        }
+                                        /* -- end of 4data.css */
